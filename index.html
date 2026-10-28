@@ -1,0 +1,1589 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HALLOWEEN ESCOLAR 2026 | 25 Atividades e Materiais Prontos para Imprimir</title>
+<meta name="description" content="25 atividades e materiais de Halloween prontos para imprimir, para a festa da escola com pouco tempo de preparo.">
+<style>
+  :root {
+    --roxo: #5c2c8c;
+    --roxo2: #2a1545;
+    --laranja: #f0781e;
+    --laranja-hover: #e06208;
+    --amarelo: #fae678;
+    --creme: #fffaf0;
+    --creme-claro: #fdf6ec;
+    --texto: #2b2030;
+    --verde: #22c55e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--texto);
+    background: var(--creme);
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 18px; }
+
+  /* ===== HEADER / HERO ===== */
+  header {
+    background: linear-gradient(160deg, var(--roxo), var(--roxo2));
+    color: #fff;
+    padding: 48px 0 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: clamp(30px, 5vw, 52px);
+    margin: 0 auto 14px;
+    color: var(--amarelo);
+    line-height: 1.15;
+    text-align: center;
+    font-weight: 900;
+  }
+  .sub {
+    font-size: clamp(17px, 2.4vw, 21px);
+    margin: 0 auto 24px;
+    max-width: 680px;
+    text-align: center;
+    opacity: 0.95;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+  .hero .hero-txt { max-width: 760px; margin: 0 auto; }
+  .hero .hero-media { max-width: 580px; width: 100%; margin: 8px auto 0; }
+  .hero .hero-media img {
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.35);
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    animation: flutua 7s ease-in-out infinite;
+  }
+  .hero .hero-cta {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--laranja);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-size: 19px;
+    box-shadow: 0 6px 0 #b85410;
+    transition: transform .2s ease, filter .2s ease;
+    cursor: pointer;
+  }
+  .btn:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px) scale(1.02);
+  }
+  .preco {
+    font-size: 16px;
+    margin-top: 12px;
+    opacity: .95;
+  }
+  .preco b { font-size: 24px; color: var(--amarelo); }
+
+  /* ===== SEÇÃO DO CARROSSEL PRINCIPAL ===== */
+  .carrossel-container {
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carrossel {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 16px 36px rgba(0,0,0,.35);
+    background: #fff;
+    touch-action: pan-y;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .carrossel.arrastando { cursor: grabbing; }
+  .trilho {
+    display: flex;
+    width: 100%;
+    will-change: transform;
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .trilho.sem-animacao { transition: none !important; }
+  .trilho img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 580px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 16px;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(240,120,30,.92);
+    color: #fff;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+    z-index: 10;
+    transition: transform .2s, background .2s;
+  }
+  .nav-btn:hover {
+    background: var(--laranja);
+    transform: translateY(-50%) scale(1.12);
+  }
+  .nav-btn.prev { left: -22px; }
+  .nav-btn.next { right: -22px; }
+  @media(max-width:620px){
+    .nav-btn.prev { left: 6px; }
+    .nav-btn.next { right: 6px; }
+  }
+  .carrossel-controles {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .contador-badge {
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(8px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--amarelo);
+    font-weight: 600;
+  }
+  .contador-badge b { color: #fff; font-size: 16px; }
+
+  /* ===== SEÇÃO 4 CATEGORIAS DE MATERIAIS COM MINI SLIDER PEEK ===== */
+  .secao-categorias {
+    padding: 50px 0;
+    background: var(--creme);
+  }
+  .titulo-total {
+    text-align: center;
+    color: var(--laranja);
+    font-size: clamp(22px, 3.2vw, 30px);
+    font-weight: 900;
+    margin: 0 0 32px;
+  }
+  .cards-categorias-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .card-cat {
+    background: #fff;
+    border-radius: 22px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 28px rgba(42,21,69,0.08);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  @media(min-width: 820px) {
+    .card-cat {
+      grid-template-columns: 1fr 1.15fr;
+      padding: 32px 36px;
+      gap: 36px;
+    }
+    .card-cat.invertido {
+      grid-template-columns: 1.15fr 1fr;
+    }
+    .card-cat.invertido .cat-txt {
+      order: 2;
+    }
+    .card-cat.invertido .cat-slider-col {
+      order: 1;
+    }
+  }
+  .cat-icon-badge {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .cat-txt h3 {
+    margin: 0 0 16px;
+    font-size: clamp(20px, 2.5vw, 24px);
+    color: #1a0e26;
+    font-weight: 900;
+  }
+  .cat-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cat-lista li {
+    font-size: 15px;
+    color: #3b2c45;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.4;
+  }
+  .cat-lista li .check-icon {
+    color: #16a34a;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-weight: bold;
+  }
+  
+  /* Mini Slider com Peek (efeito deslizante com visualização das pontas) */
+  .mini-slider-col {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #fbf9f5;
+    border-radius: 20px;
+    padding: 18px 10px 16px;
+  }
+  .mini-track-container {
+    overflow: hidden;
+    width: 100%;
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-y;
+  }
+  .mini-track-container:active {
+    cursor: grabbing;
+  }
+  .mini-trilho {
+    display: flex;
+    align-items: center;
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+    padding: 8px 0;
+  }
+  .mini-slide {
+    flex: 0 0 68%;
+    margin: 0 8px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transform: scale(0.88);
+    opacity: 0.45;
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  .mini-slide.ativo {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 12px 28px rgba(60,20,90,0.18);
+    border: 2px solid var(--laranja);
+    border-radius: 16px;
+  }
+  .mini-slide img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+    pointer-events: none;
+    border-radius: 14px;
+  }
+  .mini-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+  }
+  .mini-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d4c5de;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .mini-dots span.ativo {
+    background: var(--laranja);
+    width: 22px;
+    border-radius: 6px;
+  }
+
+  /* ===== SEÇÃO KIT DIGITAL EM PDF (Pílulas + Comparativo) ===== */
+  .secao-pdf {
+    background: #fff;
+    padding: 60px 0;
+  }
+  .secao-pdf h2 {
+    font-size: clamp(24px, 3.5vw, 36px);
+    color: #1a0e26;
+    font-weight: 900;
+    margin: 0 0 36px;
+    text-align: left;
+  }
+  .pdf-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    align-items: center;
+  }
+  @media(min-width: 860px) {
+    .pdf-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+    }
+  }
+  .pilulas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .pilula {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #fdf5ea;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2b2030;
+    transition: transform 0.2s ease;
+  }
+  .pilula:hover { transform: translateX(4px); }
+  .pilula-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--laranja);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+  .comparativo-wrap {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  .comparativo-item {
+    flex: 1;
+    max-width: 230px;
+    text-align: center;
+  }
+  .comparativo-item .folha {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.06);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulsoFolhaSuave 3.2s ease-in-out infinite;
+  }
+  .comparativo-item:nth-child(2) .folha {
+    animation-delay: 1.6s;
+  }
+  @keyframes pulsoFolhaSuave {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.025);
+      box-shadow: 0 16px 30px rgba(240,120,30,0.22);
+    }
+  }
+  .comparativo-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background: #fff;
+  }
+  .comparativo-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2b2030;
+  }
+
+  /* ===== FAIXA LARANJA & PASSO A PASSO ===== */
+  .faixa-laranja {
+    background: linear-gradient(135deg, #f0781e, #e06208);
+    color: #fff;
+    padding: 40px 18px;
+    text-align: center;
+  }
+  .faixa-laranja h2 {
+    font-size: clamp(22px, 3.4vw, 34px);
+    margin: 0 auto 20px;
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.25;
+    max-width: 860px;
+  }
+  .btn-faixa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--roxo2);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 17px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    transition: transform .2s ease, filter .2s ease;
+  }
+  .btn-faixa:hover {
+    transform: translateY(-2px) scale(1.03);
+    filter: brightness(1.1);
+  }
+  .secao-passos {
+    background: var(--creme);
+    padding: 56px 0;
+    text-align: center;
+  }
+  .secao-passos h2 {
+    font-size: clamp(24px, 3.5vw, 36px);
+    color: #1a0e26;
+    margin: 0 0 10px;
+    font-weight: 900;
+  }
+  .secao-passos .sub-passos {
+    font-size: 16px;
+    color: #554460;
+    max-width: 720px;
+    margin: 0 auto 36px;
+  }
+  .passos-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  @media(min-width: 550px) { .passos-grid { grid-template-columns: 1fr 1fr; } }
+  @media(min-width: 900px) { .passos-grid { grid-template-columns: repeat(4, 1fr); } }
+  .passo-card-img {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(42, 21, 69, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    animation: pulsoPassoSutil 3.6s ease-in-out infinite;
+  }
+  .passo-card-img:nth-child(1) { animation-delay: 0s; }
+  .passo-card-img:nth-child(2) { animation-delay: 0.9s; }
+  .passo-card-img:nth-child(3) { animation-delay: 1.8s; }
+  .passo-card-img:nth-child(4) { animation-delay: 2.7s; }
+
+  @keyframes pulsoPassoSutil {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      box-shadow: 0 8px 22px rgba(42, 21, 69, 0.08);
+    }
+    50% {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 14px 28px rgba(240, 120, 30, 0.22);
+    }
+  }
+
+  .passo-card-img:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(42, 21, 69, 0.16);
+  }
+
+  .passo-card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Mantido para compatibilidade */
+  .passo-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px 20px;
+    box-shadow: 0 8px 22px rgba(42,21,69,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  .passo-numero {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #1c1024;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .passo-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .passo-card h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #1a0e26;
+    font-weight: 800;
+  }
+  .passo-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #554460;
+    line-height: 1.45;
+  }
+
+  /* ===== SEÇÃO BÔNUS PREMIUM (6 BÔNUS + CAIXA TOTAL) ===== */
+  .secao-bonus {
+    background: var(--roxo2);
+    color: #fff;
+    padding: 60px 0;
+  }
+  .secao-bonus h2 {
+    font-size: clamp(26px, 3.8vw, 40px);
+    color: #fff;
+    text-align: center;
+    margin: 0 0 36px;
+    font-weight: 900;
+  }
+  .bonus-grid-novo {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr;
+  }
+  @media(min-width: 650px) { .bonus-grid-novo { grid-template-columns: 1fr 1fr; } }
+  @media(min-width: 950px) { .bonus-grid-novo { grid-template-columns: repeat(3, 1fr); } }
+  .card-bonus {
+    background: #fff;
+    color: var(--texto);
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .card-bonus:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.4);
+  }
+  .card-bonus-topo {
+    margin-bottom: 12px;
+  }
+  .badge-bonus {
+    display: inline-block;
+    background: var(--laranja);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 999px;
+    letter-spacing: .5px;
+  }
+  .card-bonus-img {
+    margin-bottom: 14px;
+  }
+  .card-bonus-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  .card-bonus-corpo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .card-bonus-corpo h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #1a0e26;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+  .card-bonus-corpo p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    color: #554460;
+    line-height: 1.45;
+    flex-grow: 1;
+  }
+  .card-bonus-valor {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1c1024;
+  }
+  .card-bonus-valor del {
+    color: #8f7b99;
+  }
+  .card-bonus-valor .gratis {
+    color: #16a34a;
+    font-weight: 900;
+  }
+  .caixa-ref-bonus {
+    max-width: 460px;
+    margin: 36px auto 0;
+    border: 2px solid var(--laranja);
+    border-radius: 20px;
+    padding: 20px 24px;
+    text-align: center;
+    background: rgba(240,120,30,0.08);
+  }
+  .caixa-ref-bonus .ref-label {
+    font-size: 15px;
+    color: #f5e9fc;
+    margin: 0 0 6px;
+  }
+  .caixa-ref-bonus .ref-valor {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--laranja);
+    margin: 0 0 6px;
+    line-height: 1;
+  }
+  .caixa-ref-bonus .ref-sub {
+    font-size: 15px;
+    color: #4ade80;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  /* ===== SEÇÃO PLANOS DE PREÇO (BÁSICO 15,89 E PREMIUM 18,89) ===== */
+  .secao-planos {
+    background: var(--creme);
+    padding: 60px 0;
+  }
+  .secao-planos h2 {
+    font-size: clamp(24px, 3.5vw, 36px);
+    color: #1a0e26;
+    text-align: center;
+    margin: 0 0 36px;
+    font-weight: 900;
+  }
+  .grid-planos-duo {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr;
+    max-width: 920px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+  @media(min-width: 780px) {
+    .grid-planos-duo {
+      grid-template-columns: 1fr 1.08fr;
+    }
+  }
+  .card-plano {
+    background: #fff;
+    border-radius: 24px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 30px rgba(42,21,69,0.08);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  .card-plano.destaque-premium {
+    background: #fff9f0;
+    border-color: var(--laranja);
+    box-shadow: 0 16px 40px rgba(240,120,30,0.22);
+  }
+  .badge-plano-topo {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--laranja);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 6px 18px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(240,120,30,0.4);
+    letter-spacing: .5px;
+    white-space: nowrap;
+  }
+  .card-plano h3 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    color: #1a0e26;
+    font-weight: 900;
+  }
+  .plano-img-mockup {
+    background: #fbf5eb;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .plano-img-mockup img {
+    max-height: 200px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .toque-ampliar {
+    font-size: 12px;
+    color: #8c769b;
+    margin-top: 8px;
+  }
+  .plano-preco-grande {
+    font-size: 46px;
+    font-weight: 900;
+    color: #1a0e26;
+    margin: 12px 0 16px;
+    line-height: 1;
+  }
+  .destaque-premium .plano-preco-grande {
+    color: var(--laranja);
+  }
+  .plano-beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+  }
+  .plano-beneficios li {
+    font-size: 15px;
+    color: #3b2c45;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.35;
+  }
+  .plano-beneficios li .check-icon {
+    color: #16a34a;
+    font-size: 17px;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  .btn-plano {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--laranja);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 16px 22px;
+    border-radius: 14px;
+    font-size: 18px;
+    box-shadow: 0 6px 0 #b85410;
+    transition: transform .2s, filter .2s;
+  }
+  .btn-plano:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+  }
+
+  /* ===== SEÇÃO GARANTIA 7 DIAS ===== */
+  .secao-garantia {
+    background: var(--creme);
+    padding: 50px 0 60px;
+  }
+  .garantia-card-box {
+    background: #fff;
+    border-radius: 22px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 30px rgba(42,21,69,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  @media(min-width: 650px) {
+    .garantia-card-box {
+      flex-direction: row;
+      gap: 36px;
+      padding: 36px 42px;
+    }
+  }
+  .selo-7dias {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px dashed var(--laranja);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  .selo-7dias .num {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--laranja);
+    line-height: 1;
+  }
+  .selo-7dias .txt {
+    font-size: 11px;
+    font-weight: 800;
+    color: #1a0e26;
+    letter-spacing: .5px;
+    margin-top: 2px;
+  }
+  .garantia-info h3 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    color: #1a0e26;
+    font-weight: 900;
+  }
+  .garantia-info .segura {
+    color: #16a34a;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .garantia-info p {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #554460;
+    line-height: 1.5;
+  }
+  .garantia-info .sem-burocracia {
+    font-weight: 800;
+    color: #1a0e26;
+  }
+  .garantia-info .validade-planos {
+    font-size: 13px;
+    color: #7b6989;
+  }
+
+  /* ===== FOOTER NOVO ===== */
+  footer {
+    background: #140822;
+    color: #a797b5;
+    padding: 28px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+
+  /* ===== ANIMAÇÕES & BOTÃO FIXO ===== */
+  @keyframes flutua{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(4deg)}}
+  @keyframes pulso {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 6px 0 #b85410, 0 0 0 0 rgba(240, 120, 30, 0.65);
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 6px 0 #b85410, 0 0 0 14px rgba(240, 120, 30, 0);
+    }
+  }
+  .deco{position:absolute;pointer-events:none;opacity:.22;font-size:38px;animation:flutua 6s ease-in-out infinite}
+  .btn.pulso, .btn-plano.pulso {
+    animation: pulso 2s ease-in-out infinite;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero-area">
+  <span class="deco" style="top:12%;left:4%">🦇</span>
+  <span class="deco" style="top:60%;left:46%;animation-delay:1.5s">⭐</span>
+  <span class="deco" style="top:18%;right:4%;animation-delay:3s">🎃</span>
+  <div class="wrap hero">
+    <div class="hero-txt">
+      <h1>Halloween Escolar 2026</h1>
+      <p class="sub">25 atividades e materiais de Halloween prontos para imprimir. Monte a festa da escola sem precisar criar nada do zero.</p>
+    </div>
+    <div class="hero-media">
+      <img src="assets/capa.png" alt="Capa do kit Halloween Escolar 2026 com atividades espalhadas">
+    </div>
+    <div class="hero-cta">
+      <a class="btn pulso" href="#planos" data-checkout>Quero o meu kit</a>
+      <p class="preco">Por apenas <b>R$ 15,89</b> · pagamento seguro</p>
+    </div>
+  </div>
+</header>
+
+<!-- FRASE DE IMPACTO / DOR -->
+<section style="background:#fff;text-align:center;padding:48px 0">
+  <div class="wrap">
+    <p style="max-width:720px;margin:0 auto 22px;font-size:18px">Muitas professoras querem uma festa de Halloween divertida para a turma, mas não têm tempo para criar jogos, atividades e decoração do zero.</p>
+    <div style="max-width:720px;margin:0 auto;background:var(--roxo2);color:#fff;border-radius:18px;padding:26px 22px;box-shadow:0 14px 30px rgba(42,21,69,.3)">
+      <p style="margin:0;font-size:clamp(20px,3vw,26px);font-weight:800;color:var(--amarelo)">"Quero uma festa de Halloween pronta para a minha turma, sem virar a noite."</p>
+    </div>
+    <p style="max-width:720px;margin:22px auto 0;font-size:18px">Com o kit, você tem a comemoração organizada, com materiais prontos para imprimir e aplicar, sem abrir mão do seu tempo livre.</p>
+  </div>
+</section>
+
+<!-- CARROSSEL DAS 36 PÁGINAS (VEJA O QUE VEM NO KIT) -->
+<section style="background:var(--roxo2);color:#fff;text-align:center;padding:50px 0">
+  <div class="wrap">
+    <h2 style="color:var(--amarelo);font-size:clamp(24px,3.5vw,36px);margin:0 0 20px;font-weight:900">Veja o que vem no kit</h2>
+    <div class="carrossel-container">
+      <button class="nav-btn prev" id="btnPrev" aria-label="Página anterior">&#10094;</button>
+      <div class="carrossel" id="carrossel">
+        <div class="trilho" id="trilho">
+          <img src="assets/carrossel/atividade_01.jpg" alt="Página 1 do kit Halloween Escolar 2026" loading="eager">
+          <img src="assets/carrossel/atividade_02.jpg" alt="Página 2 do kit Halloween Escolar 2026" loading="eager">
+          <img src="assets/carrossel/atividade_03.jpg" alt="Página 3 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_04.jpg" alt="Página 4 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_05.jpg" alt="Página 5 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_06.jpg" alt="Página 6 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_07.jpg" alt="Página 7 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_08.jpg" alt="Página 8 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_09.jpg" alt="Página 9 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_10.jpg" alt="Página 10 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_11.jpg" alt="Página 11 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_12.jpg" alt="Página 12 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_13.jpg" alt="Página 13 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_14.jpg" alt="Página 14 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_15.jpg" alt="Página 15 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_16.jpg" alt="Página 16 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_17.jpg" alt="Página 17 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_18.jpg" alt="Página 18 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_19.jpg" alt="Página 19 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_20.jpg" alt="Página 20 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_21.jpg" alt="Página 21 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_22.jpg" alt="Página 22 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_23.jpg" alt="Página 23 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_24.jpg" alt="Página 24 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_25.jpg" alt="Página 25 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_26.jpg" alt="Página 26 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_27.jpg" alt="Página 27 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_28.jpg" alt="Página 28 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_29.jpg" alt="Página 29 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_30.jpg" alt="Página 30 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_31.jpg" alt="Página 31 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_32.jpg" alt="Página 32 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_33.jpg" alt="Página 33 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_34.jpg" alt="Página 34 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_35.jpg" alt="Página 35 do kit Halloween Escolar 2026" loading="lazy">
+          <img src="assets/carrossel/atividade_36.jpg" alt="Página 36 do kit Halloween Escolar 2026" loading="lazy">
+        </div>
+      </div>
+      <button class="nav-btn next" id="btnNext" aria-label="Próxima página">&#10095;</button>
+    </div>
+    <div class="carrossel-controles">
+      <div class="contador-badge" id="contadorSlide">Página <b>1</b> de 36</div>
+    </div>
+    <div style="margin-top:22px">
+      <a class="btn pulso" href="#planos" data-checkout>Quero o meu kit</a>
+      <p class="preco" style="margin-top:10px">Por apenas <b>R$ 15,89</b> · pagamento seguro</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO DAS 4 CATEGORIAS DE MATERIAIS (IMAGENS 2, 3, 4 E 5) -->
+<section class="secao-categorias">
+  <div class="wrap">
+    <h2 class="titulo-total">Total: 25 atividades e materiais prontos.</h2>
+    <div class="cards-categorias-grid">
+      
+      <!-- Card 1: 5 Jogos de Halloween (Imagens 1 a 6 do PDF) -->
+      <div class="card-cat">
+        <div class="cat-txt">
+          <div class="cat-icon-badge">🎲</div>
+          <h3>5 Jogos de Halloween</h3>
+          <ul class="cat-lista">
+            <li><span class="check-icon">✔</span> 1 Bingo com cartelas prontas</li>
+            <li><span class="check-icon">✔</span> 1 Caça ao tesouro com pistas</li>
+            <li><span class="check-icon">✔</span> 1 Jogo da memória</li>
+            <li><span class="check-icon">✔</span> 1 Jogo de charadas</li>
+            <li><span class="check-icon">✔</span> 1 Jogo de associação de figuras</li>
+          </ul>
+        </div>
+        <div class="cat-slider-col mini-slider-wrap" data-mini-slider>
+          <div class="mini-track-container">
+            <div class="mini-trilho">
+              <div class="mini-slide ativo"><img src="assets/carrossel/atividade_01.jpg" alt="Atividade 1 - Jogos de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_02.jpg" alt="Atividade 2 - Jogos de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_03.jpg" alt="Atividade 3 - Jogos de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_04.jpg" alt="Atividade 4 - Bingo Encantado de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_05.jpg" alt="Atividade 5 - Caça ao Tesouro da Abóbora Mágica"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_06.jpg" alt="Atividade 6 - Jogo da Memória Monstrinhos Amigáveis"></div>
+            </div>
+          </div>
+          <div class="mini-dots"></div>
+        </div>
+      </div>
+
+      <!-- Card 2: 6 Atividades Pedagógicas (Imagens 7 a 13 do PDF) -->
+      <div class="card-cat invertido">
+        <div class="cat-txt">
+          <div class="cat-icon-badge">✏️</div>
+          <h3>6 Atividades Pedagógicas</h3>
+          <ul class="cat-lista">
+            <li><span class="check-icon">✔</span> 2 Caça-palavras por nível</li>
+            <li><span class="check-icon">✔</span> 2 Labirintos temáticos</li>
+            <li><span class="check-icon">✔</span> 2 Atividades para colorir</li>
+          </ul>
+        </div>
+        <div class="cat-slider-col mini-slider-wrap" data-mini-slider>
+          <div class="mini-track-container">
+            <div class="mini-trilho">
+              <div class="mini-slide ativo"><img src="assets/carrossel/atividade_07.jpg" alt="Atividade 7 - Atividades Pedagógicas"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_08.jpg" alt="Atividade 8 - Atividades Pedagógicas"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_09.jpg" alt="Atividade 9 - Caça-Palavras Halloween Divertido"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_10.jpg" alt="Atividade 10 - Caça-Palavras Mistério de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_11.jpg" alt="Atividade 11 - Labirinto do Fantasminha"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_12.jpg" alt="Atividade 12 - Atividades Pedagógicas"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_13.jpg" alt="Atividade 13 - Colorindo o Fantasminha Feliz"></div>
+            </div>
+          </div>
+          <div class="mini-dots"></div>
+        </div>
+      </div>
+
+      <!-- Card 3: 8 Materiais de Decoração e Personalização (Imagens 14 a 20 do PDF) -->
+      <div class="card-cat">
+        <div class="cat-txt">
+          <div class="cat-icon-badge">🎃</div>
+          <h3>8 Materiais de Decoração e Personalização</h3>
+          <ul class="cat-lista">
+            <li><span class="check-icon">✔</span> 2 Máscaras de Halloween</li>
+            <li><span class="check-icon">✔</span> 2 Cartazes decorativos</li>
+            <li><span class="check-icon">✔</span> 2 Bandeirolas temáticas</li>
+            <li><span class="check-icon">✔</span> 2 Convites para a comemoração</li>
+          </ul>
+        </div>
+        <div class="cat-slider-col mini-slider-wrap" data-mini-slider>
+          <div class="mini-track-container">
+            <div class="mini-trilho">
+              <div class="mini-slide ativo"><img src="assets/carrossel/atividade_14.jpg" alt="Atividade 14 - Pinte por Números"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_15.jpg" alt="Atividade 15 - Máscara da Abóbora Sorridente"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_16.jpg" alt="Atividade 16 - Máscara Meu Gatinho de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_17.jpg" alt="Atividade 17 - Cartaz Feliz Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_18.jpg" alt="Atividade 18 - Decoração de Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_19.jpg" alt="Atividade 19 - Bandeirolas Feliz Halloween"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_20.jpg" alt="Atividade 20 - Convite de Halloween"></div>
+            </div>
+          </div>
+          <div class="mini-dots"></div>
+        </div>
+      </div>
+
+      <!-- Card 4: 2 Materiais de Organização (Imagens 21 a 28 do PDF) -->
+      <div class="card-cat invertido">
+        <div class="cat-txt">
+          <div class="cat-icon-badge">📋</div>
+          <h3>2 Materiais de Organização</h3>
+          <ul class="cat-lista">
+            <li><span class="check-icon">✔</span> 1 Roteiro de 60 minutos para conduzir a comemoração</li>
+            <li><span class="check-icon">✔</span> 1 Checklist de preparação em 30 minutos</li>
+          </ul>
+        </div>
+        <div class="cat-slider-col mini-slider-wrap" data-mini-slider>
+          <div class="mini-track-container">
+            <div class="mini-trilho">
+              <div class="mini-slide ativo"><img src="assets/carrossel/atividade_21.jpg" alt="Atividade 21 - Materiais de Organização"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_22.jpg" alt="Atividade 22 - Materiais de Organização"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_23.jpg" alt="Atividade 23 - Materiais de Organização"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_24.jpg" alt="Atividade 24 - Materiais de Organização"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_25.jpg" alt="Atividade 25 - Materiais de Organização"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_26.jpg" alt="Atividade 26 - Cronograma e Dicas"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_27.jpg" alt="Atividade 27 - Roteiro Pronto 60 Minutos"></div>
+              <div class="mini-slide"><img src="assets/carrossel/atividade_28.jpg" alt="Atividade 28 - Checklist Halloween Pronto em 30 Minutos"></div>
+            </div>
+          </div>
+          <div class="mini-dots"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO: KIT DIGITAL EM PDF (IMAGEM 6) -->
+<section class="secao-pdf">
+  <div class="wrap">
+    <h2>Kit digital em PDF, pronto para imprimir e aplicar.</h2>
+    <div class="pdf-grid">
+      <div class="pilulas-lista">
+        <div class="pilula"><div class="pilula-icon">📄</div><span>Kit digital em PDF, pronto para imprimir e aplicar.</span></div>
+        <div class="pilula"><div class="pilula-icon">🎉</div><span>25 atividades e materiais de Halloween.</span></div>
+        <div class="pilula"><div class="pilula-icon">🖨️</div><span>Tamanho A4, para impressora comum.</span></div>
+        <div class="pilula"><div class="pilula-icon">📄</div><span>Versão colorida e versão econômica em preto e branco.</span></div>
+        <div class="pilula"><div class="pilula-icon">📄</div><span>Aproximadamente 25 a 35 páginas.</span></div>
+        <div class="pilula"><div class="pilula-icon">📥</div><span>Acesso imediato após a compra.</span></div>
+        <div class="pilula"><div class="pilula-icon">📱</div><span>Compatível com celular e computador.</span></div>
+        <div class="pilula"><div class="pilula-icon">💻</div><span>Download dos arquivos para imprimir e usar na escola.</span></div>
+      </div>
+      <div class="comparativo-wrap">
+        <div class="comparativo-item">
+          <div class="folha"><img src="assets/carrossel/atividade_04.jpg" alt="Bingo Colorido"></div>
+          <div class="comparativo-label">Colorida</div>
+        </div>
+        <div class="comparativo-item">
+          <div class="folha"><img src="assets/bingo-pb.jpg" alt="Bingo Preto e Branco"></div>
+          <div class="comparativo-label">Preto e branco</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA LARANJA & PASSO A PASSO (IMAGEM 7) -->
+<div class="faixa-laranja">
+  <div class="wrap">
+    <h2>HALLOWEEN ESCOLAR 2026: 25 Atividades e Materiais Prontos para Facilitar a Preparação da Sua Comemoração!</h2>
+    <a class="btn-faixa" href="#planos">🎃 Ver os planos</a>
+  </div>
+</div>
+
+<section class="secao-passos">
+  <div class="wrap">
+    <h2>Comemoração Pronta para Imprimir.</h2>
+    <p class="sub-passos">Um kit digital com 25 atividades e materiais de Halloween, organizados em PDF, para a professora preparar sua comemoração sem criar nada do zero.</p>
+    <div class="passos-grid">
+      <div class="passo-card-img">
+        <img src="assets/passo-01.jpg" alt="Passo 1: Baixe - Receba o kit em PDF logo após a compra.">
+      </div>
+      <div class="passo-card-img">
+        <img src="assets/passo-02.jpg" alt="Passo 2: Imprima - Separe as atividades da sua turma e imprima em papel A4.">
+      </div>
+      <div class="passo-card-img">
+        <img src="assets/passo-03.jpg" alt="Passo 3: Organize - Prepare tudo em meia hora com a nossa lista de conferência.">
+      </div>
+      <div class="passo-card-img">
+        <img src="assets/passo-04.jpg" alt="Passo 4: Aplique - Conduza a festa com o roteiro de 60 minutos, passo a passo.">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO BÔNUS PREMIUM (IMAGENS 8, 9 E 10) -->
+<section class="secao-bonus">
+  <div class="wrap">
+    <h2>🎁 Bônus Premium 🎁</h2>
+    <div class="bonus-grid-novo">
+      
+      <!-- Bônus 1 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 01</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-01.jpg" alt="5 Brincadeiras de Halloween Sem Impressão"></div>
+        <div class="card-bonus-corpo">
+          <h4>5 Brincadeiras de Halloween Sem Impressão</h4>
+          <p>Brincadeiras rápidas para animar a turma sem precisar imprimir ou preparar materiais.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 27,00</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+      <!-- Bônus 2 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 02</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-02.jpg" alt="Trilha Sonora Mágica + Guia de Sonorização"></div>
+        <div class="card-bonus-corpo">
+          <h4>Trilha Sonora Mágica + Guia de Sonorização</h4>
+          <p>Playlist infantil de Halloween no Spotify/YouTube, com músicas divertidas e sem sustos, mais um PDF indicando qual faixa tocar em cada momento da comemoração.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 27,00</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+      <!-- Bônus 3 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 03</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-03.jpg" alt="6 Adaptações de Atividades por Faixa Etária"></div>
+        <div class="card-bonus-corpo">
+          <h4>6 Adaptações de Atividades por Faixa Etária</h4>
+          <p>Alternativas para adaptar as brincadeiras à educação infantil e aos anos iniciais do ensino fundamental.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 37,00</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+      <!-- Bônus 4 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 04</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-04.jpg" alt="Guia de Lanches Temáticos"></div>
+        <div class="card-bonus-corpo">
+          <h4>Guia de Lanches Temáticos — Sem Sujeira e Sem Estresse</h4>
+          <p>7 ideias de lanches econômicos, rápidos e sem necessidade de cozinhar na escola, com opções de apresentação temática para o Halloween.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 19,90</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+      <!-- Bônus 5 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 05</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-05.jpg" alt="Kit de Fotos Divertidas de Halloween"></div>
+        <div class="card-bonus-corpo">
+          <h4>Kit de Fotos Divertidas de Halloween</h4>
+          <p>12 plaquinhas e acessórios temáticos prontos para imprimir, recortar e montar um cantinho de fotos para registrar a comemoração.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 47,00</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+      <!-- Bônus 6 -->
+      <div class="card-bonus">
+        <div class="card-bonus-topo"><span class="badge-bonus">BÔNUS 06</span></div>
+        <div class="card-bonus-img"><img src="assets/bonus-06.jpg" alt="Diplomas e Medalhas do Mestre dos Enigmas"></div>
+        <div class="card-bonus-corpo">
+          <h4>Diplomas e Medalhas do Mestre dos Enigmas</h4>
+          <p>Certificados e medalhas coloridos e em preto e branco, prontos para imprimir e entregar às crianças que participarem do Bingo e da Caça ao Tesouro.</p>
+          <div class="card-bonus-valor">Valor: <del>R$ 19,90</del> — <span class="gratis">GRÁTIS</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Caixa de Referência dos Bônus (Imagem 10) -->
+    <div class="caixa-ref-bonus">
+      <div class="ref-label">Valor total de referência dos bônus</div>
+      <div class="ref-valor">R$ 177,80</div>
+      <div class="ref-sub">6 bônus gratuitos no Premium.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO DOS PLANOS / PREÇOS (IMAGENS 11, 12, 13) -->
+<section class="secao-planos" id="planos">
+  <div class="wrap">
+    <h2>Escolha o seu plano de acesso</h2>
+    <div class="grid-planos-duo">
+      
+      <!-- PLANO BÁSICO (R$ 15,89) -->
+      <div class="card-plano">
+        <h3>PLANO BÁSICO</h3>
+        <div class="plano-img-mockup">
+          <img src="assets/capa.png" alt="Plano Básico">
+          <div class="toque-ampliar">⤢ Toque para ampliar</div>
+        </div>
+        <div class="plano-preco-grande">R$ 15,89</div>
+        <ul class="plano-beneficios">
+          <li><span class="check-icon">✔</span> 25 atividades e materiais de Halloween</li>
+          <li><span class="check-icon">✔</span> Kit digital em PDF</li>
+          <li><span class="check-icon">✔</span> Roteiro de 60 minutos</li>
+          <li><span class="check-icon">✔</span> Checklist de preparação</li>
+        </ul>
+        <a class="btn-plano" href="https://pay.cakto.com.br/qjnwav3_1252759" target="_blank" data-checkout>Quero o Básico</a>
+      </div>
+
+      <!-- PLANO PREMIUM (R$ 18,89) COM BADGE -->
+      <div class="card-plano destaque-premium">
+        <div class="badge-plano-topo">🎁 + 6 BÔNUS</div>
+        <h3>PLANO PREMIUM</h3>
+        <div class="plano-img-mockup">
+          <img src="assets/banner.jpg" alt="Plano Premium">
+          <div class="toque-ampliar">⤢ Toque para ampliar</div>
+        </div>
+        <div class="plano-preco-grande">R$ 18,89</div>
+        <ul class="plano-beneficios">
+          <li><span class="check-icon">✔</span> Tudo do Básico</li>
+          <li><span class="check-icon">✔</span> 6 bônus exclusivos</li>
+          <li><span class="check-icon">✔</span> R$ 177,80 em bônus de referência</li>
+          <li><span class="check-icon">✔</span> Acesso imediato</li>
+        </ul>
+        <a class="btn-plano pulso" href="https://pay.cakto.com.br/3bchxmw" target="_blank" data-checkout>Quero o Premium</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO GARANTIA 7 DIAS (IMAGEM 14) -->
+<section class="secao-garantia">
+  <div class="wrap">
+    <div class="garantia-card-box">
+      <div class="selo-7dias">
+        <div class="num">7</div>
+        <div class="txt">DIAS DE GARANTIA</div>
+      </div>
+      <div class="garantia-info">
+        <h3>Garantia Incondicional de 7 Dias</h3>
+        <div class="segura">🛡️ Sua compra é 100% segura!</div>
+        <p>Você tem 7 dias para conhecer o material. Se por qualquer motivo achar que o kit não é para você, devolvemos 100% do seu dinheiro.</p>
+        <p class="sem-burocracia">Sem perguntas. Sem burocracia.</p>
+        <div class="validade-planos">Válida para os dois valores: Básico R$ 15,89 e Premium R$ 18,89.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER NOVO (IMAGEM 14) -->
+<footer>
+  <div class="wrap">HALLOWEEN ESCOLAR 2026 - Produto digital</div>
+</footer>
+
+<script>
+  // Link de checkout (Cakto, Kiwify ou Mercado Pago)
+  const LINK_CHECKOUT = "COLE_AQUI_O_LINK_DO_CHECKOUT";
+
+  // ===== CARROSSEL PRINCIPAL (36 PÁGINAS) =====
+  const carrosselEl = document.getElementById("carrossel");
+  const trilho = document.getElementById("trilho");
+  const total = trilho ? trilho.children.length : 0;
+  const contador = document.getElementById("contadorSlide");
+  const btnPrev = document.getElementById("btnPrev");
+  const btnNext = document.getElementById("btnNext");
+  let atual = 0;
+  let timerAuto = null;
+
+  function obterLargura() {
+    return carrosselEl ? carrosselEl.clientWidth : 540;
+  }
+
+  function irParaSlide(index, animar = true) {
+    if (!total || !trilho) return;
+    if (index < 0) atual = total - 1;
+    else if (index >= total) atual = 0;
+    else atual = index;
+
+    if (!animar) {
+      trilho.classList.add("sem-animacao");
+    } else {
+      trilho.classList.remove("sem-animacao");
+    }
+
+    const largura = obterLargura();
+    trilho.style.transform = `translate3d(-${atual * largura}px, 0, 0)`;
+
+    if (contador) {
+      contador.innerHTML = `Página <b>${atual + 1}</b> de ${total}`;
+    }
+
+    if (!animar) {
+      void trilho.offsetWidth;
+      trilho.classList.remove("sem-animacao");
+    }
+  }
+
+  function proximoSlide() { irParaSlide(atual + 1, true); }
+  function slideAnterior() { irParaSlide(atual - 1, true); }
+  function iniciarAutoPlay() { pararAutoPlay(); timerAuto = setInterval(proximoSlide, 3500); }
+  function pararAutoPlay() { if (timerAuto) clearInterval(timerAuto); }
+  function reiniciarAutoPlay() { iniciarAutoPlay(); }
+
+  if (btnPrev) btnPrev.addEventListener("click", (e) => { e.stopPropagation(); slideAnterior(); reiniciarAutoPlay(); });
+  if (btnNext) btnNext.addEventListener("click", (e) => { e.stopPropagation(); proximoSlide(); reiniciarAutoPlay(); });
+
+  let estaArrastando = false, inicioX = 0, diferencaX = 0;
+  function iniciarGesto(clientX) {
+    estaArrastando = true; inicioX = clientX; diferencaX = 0;
+    pararAutoPlay();
+    trilho.classList.add("sem-animacao");
+    if (carrosselEl) carrosselEl.classList.add("arrastando");
+  }
+  function moverGesto(clientX) {
+    if (!estaArrastando) return;
+    diferencaX = clientX - inicioX;
+    const largura = obterLargura();
+    trilho.style.transform = `translate3d(${-(atual * largura) + diferencaX}px, 0, 0)`;
+  }
+  function finalizarGesto() {
+    if (!estaArrastando) return;
+    estaArrastando = false;
+    trilho.classList.remove("sem-animacao");
+    if (carrosselEl) carrosselEl.classList.remove("arrastando");
+    const largura = obterLargura();
+    const limiar = Math.min(largura * 0.15, 60);
+    if (diferencaX < -limiar) proximoSlide();
+    else if (diferencaX > limiar) slideAnterior();
+    else irParaSlide(atual, true);
+    diferencaX = 0;
+    reiniciarAutoPlay();
+  }
+
+  if (carrosselEl) {
+    carrosselEl.addEventListener("touchstart", (e) => { if (e.touches.length === 1) iniciarGesto(e.touches[0].clientX); }, { passive: true });
+    carrosselEl.addEventListener("touchmove", (e) => { if (e.touches.length === 1) moverGesto(e.touches[0].clientX); }, { passive: true });
+    carrosselEl.addEventListener("touchend", finalizarGesto, { passive: true });
+    carrosselEl.addEventListener("mousedown", (e) => iniciarGesto(e.clientX));
+    window.addEventListener("mousemove", (e) => { if (estaArrastando) moverGesto(e.clientX); });
+    window.addEventListener("mouseup", () => { if (estaArrastando) finalizarGesto(); });
+    carrosselEl.addEventListener("mouseenter", pararAutoPlay);
+    carrosselEl.addEventListener("mouseleave", () => { if (!estaArrastando) iniciarAutoPlay(); });
+  }
+
+  window.addEventListener("resize", () => irParaSlide(atual, false));
+  irParaSlide(0, false);
+  iniciarAutoPlay();
+
+  // ===== MINI SLIDERS PEEK (4 CATEGORIAS) COM TRANSIÇÃO CONTÍNUA E LEVE =====
+  document.querySelectorAll("[data-mini-slider]").forEach((wrap, wrapIdx) => {
+    const trilho = wrap.querySelector(".mini-trilho");
+    const slides = Array.from(wrap.querySelectorAll(".mini-slide"));
+    const dotsContainer = wrap.querySelector(".mini-dots");
+    const trackContainer = wrap.querySelector(".mini-track-container") || wrap;
+    if (!trilho || slides.length === 0) return;
+
+    let idxAtual = 0;
+    const activeIdx = slides.findIndex((s) => s.classList.contains("ativo"));
+    if (activeIdx !== -1) idxAtual = activeIdx;
+
+    dotsContainer.innerHTML = "";
+    slides.forEach((slide, i) => {
+      const dot = document.createElement("span");
+      if (i === idxAtual) dot.className = "ativo";
+      dot.setAttribute("aria-label", `Slide ${i + 1}`);
+      dot.addEventListener("click", (e) => {
+        e.stopPropagation();
+        irParaMini(i);
+        reiniciarAuto();
+      });
+      dotsContainer.appendChild(dot);
+
+      slide.addEventListener("click", () => {
+        irParaMini(i);
+        reiniciarAuto();
+      });
+    });
+
+    function irParaMini(idx) {
+      if (idx < 0) idx = slides.length - 1;
+      else if (idx >= slides.length) idx = 0;
+      idxAtual = idx;
+
+      slides.forEach((s, i) => s.classList.toggle("ativo", i === idxAtual));
+      if (dotsContainer.children.length) {
+        Array.from(dotsContainer.children).forEach((d, i) => d.classList.toggle("ativo", i === idxAtual));
+      }
+
+      const containerWidth = trackContainer.clientWidth;
+      const slideEl = slides[idxAtual];
+      if (slideEl && containerWidth > 0) {
+        const slideCenter = slideEl.offsetLeft + slideEl.offsetWidth / 2;
+        const offset = (containerWidth / 2) - slideCenter;
+        trilho.style.transform = `translate3d(${offset}px, 0, 0)`;
+      }
+    }
+
+    // Auto-play suave e contínuo (com intervalo levemente desfasado para cada card)
+    let autoInterval = null;
+    const delay = 3200 + (wrapIdx * 350);
+
+    function iniciarAuto() {
+      if (autoInterval) clearInterval(autoInterval);
+      autoInterval = setInterval(() => {
+        irParaMini(idxAtual + 1);
+      }, delay);
+    }
+
+    function pararAuto() {
+      if (autoInterval) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+      }
+    }
+
+    function reiniciarAuto() {
+      pararAuto();
+      iniciarAuto();
+    }
+
+    wrap.addEventListener("mouseenter", pararAuto);
+    wrap.addEventListener("mouseleave", iniciarAuto);
+
+    let miniStartX = 0;
+    let miniStartY = 0;
+    let isTouching = false;
+
+    trackContainer.addEventListener("touchstart", (e) => {
+      pararAuto();
+      isTouching = true;
+      miniStartX = e.touches[0].clientX;
+      miniStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    trackContainer.addEventListener("touchend", (e) => {
+      if (!isTouching) return;
+      isTouching = false;
+      const diffX = miniStartX - e.changedTouches[0].clientX;
+      const diffY = miniStartY - e.changedTouches[0].clientY;
+      if (Math.abs(diffX) > 30 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX > 0) irParaMini(idxAtual + 1);
+        else irParaMini(idxAtual - 1);
+      }
+      setTimeout(iniciarAuto, 2500);
+    }, { passive: true });
+
+    let isMouseDown = false;
+    let mouseStartX = 0;
+
+    trackContainer.addEventListener("mousedown", (e) => {
+      pararAuto();
+      isMouseDown = true;
+      mouseStartX = e.clientX;
+    });
+
+    window.addEventListener("mouseup", (e) => {
+      if (!isMouseDown) return;
+      isMouseDown = false;
+      const diffX = mouseStartX - e.clientX;
+      if (Math.abs(diffX) > 35) {
+        if (diffX > 0) irParaMini(idxAtual + 1);
+        else irParaMini(idxAtual - 1);
+      }
+      setTimeout(iniciarAuto, 2500);
+    });
+
+    setTimeout(() => {
+      irParaMini(idxAtual);
+      iniciarAuto();
+    }, 150);
+
+    window.addEventListener("load", () => irParaMini(idxAtual));
+    window.addEventListener("resize", () => irParaMini(idxAtual));
+  });
+
+  document.querySelectorAll("[data-checkout]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const href = el.getAttribute("href");
+      if (href && (href.startsWith("http") || href.startsWith("#"))) {
+        return;
+      }
+      if (LINK_CHECKOUT.indexOf("COLE_AQUI") === 0) {
+        e.preventDefault();
+        alert("Link de checkout ainda não configurado.");
+        return;
+      }
+      el.setAttribute("href", LINK_CHECKOUT);
+    });
+  });
+</script>
+</body>
+</html>
